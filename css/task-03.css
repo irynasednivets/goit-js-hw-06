@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 2fr);
+  grid-gap: 15px;
+}
+.gallery li:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 3;
+}
+.gallery li:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.gallery li:nth-child(3) {
+  grid-area: 2 / 3 / 3 / 4;
+}
